@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJn6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBdfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Item List Example</title>
+
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+
+        }
+        #main-header{
+            background-color: #1d9344;
+            color:white;
+            width:auto;
+            padding: 20px 50px;
+            
+        }
+
+        #main{
+            border: 1px solid gray;
+            margin: 15px 60px 0 60px;
+            padding: 20px;
+        }
+
+        .card-body{
+            border:1px solid gray;
+            border-radius: 3px;
+
+        }
+
+        .card{
+            border: 1px solid gray;
+            padding:10px;
+           
+        }
+
+        .list-group-item{
+            list-style-type: none;
+            border: 1px solid gray;
+            padding: 18px;
+
+        }
+
+        .form-control {
+            padding: 3px;
+        }
+
+        .btn-dark{
+            background-color: darkslategray;
+            border: 1px solid darkslategray;
+            color:white;
+            font-size:12px;
+            padding: 5px;
+            border-radius: 3px;
+          
+
+        }
+    </style>
+    
+</head>
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">Item Lister</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Items</h2>
+            <form class="form-inline mb-3">
+                <input type="text" class="form-control mr-2">
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>               
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
