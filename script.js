@@ -31,11 +31,10 @@
          items[1].textContent = 'Hello 2';
          items[1].style.fontWeight='bold';
          items[2].style.backgroundColor='yellow';
-         // items.style.backgroundColor='red'; hata verir çünkü döngü 
-         //içerisinde tek tek atama yapmamız gerekiyor
+         // items.style.backgroundColor='red';it gives an error because 
+         //we need to assign one by one in the loop
          for(var i=0; i < items.length; i++){
              items[i].style.backgroundColor = '#f4f4f4';
-
          }
 
          // GETELEMENTSBYTAGNAME - same getElementsByClassName, only difference is that we use tags.//
